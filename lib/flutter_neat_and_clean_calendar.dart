@@ -232,6 +232,7 @@ class _CalendarState extends State<Calendar> {
             // Iteration over the range (diferrence between start and end time in days).
             NeatCleanCalendarEvent newEvent = NeatCleanCalendarEvent(
                 event.summary,
+                id: event.id,
                 description: event.description,
                 location: event.location,
                 color: event.color,

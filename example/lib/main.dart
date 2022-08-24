@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_neat_and_clean_calendar/flutter_neat_and_clean_calendar.dart';
 
@@ -31,6 +29,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
         endTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day, 12, 0),
         description: 'A special event',
+        id: 0,
         color: Colors.blue[700]),
   ];
 
@@ -42,6 +41,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
         endTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day + 2, 12, 0),
         color: Colors.orange,
+        id: 1,
         isMultiDay: true),
     NeatCleanCalendarEvent('Allday Event B',
         description: 'test desc',
@@ -50,13 +50,15 @@ class _CalendarScreenState extends State<CalendarScreen> {
         endTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day + 2, 17, 0),
         color: Colors.pink,
+        id: 2,
         isAllDay: true),
     NeatCleanCalendarEvent('Normal Event D',
-        description: 'test desc',  
+        description: 'test desc',
         startTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day, 14, 30),
         endTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day, 17, 0),
+        id: 3,
         color: Colors.indigo),
     NeatCleanCalendarEvent('Normal Event E',
         description: 'test desc',
@@ -64,6 +66,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
             DateTime.now().day, 7, 45),
         endTime: DateTime(DateTime.now().year, DateTime.now().month,
             DateTime.now().day, 9, 0),
+        id: 4,
         color: Colors.indigo),
   ];
 

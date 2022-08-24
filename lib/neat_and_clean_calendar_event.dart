@@ -21,8 +21,8 @@ class NeatCleanCalendarEvent {
 
   NeatCleanCalendarEvent(this.summary,
       {this.description = '',
-      this.id = 0,
       this.location = '',
+      required this.id ,
       required this.startTime,
       required this.endTime,
       this.color = Colors.blue,
